@@ -1,2 +1,66 @@
-body {
-  background: grey; }
+.header {
+  box-shadow: 0 1px 2px #ccc; }
+  .header .header-left {
+    background-color: #cb0e0e;
+    width: 160px;
+    text-align: center; }
+    .header .header-left img {
+      width: 70%;
+      margin: 10px 0; }
+  .header .header-right {
+    padding: 12px;
+    margin: 0 10px; }
+    .header .header-right .search-input {
+      border: none;
+      background: #e8e8e894;
+      border-radius: 20px;
+      font-size: 12px;
+      padding: 4px 10px;
+      margin-left: 10px; }
+      .header .header-right .search-input:focus {
+        outline: none; }
+    .header .header-right .pro-pic {
+      width: 25px;
+      height: 25px;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 50px;
+      float: right;
+      margin-right: 10px; }
+    .header .header-right .notifications {
+      position: relative;
+      float: right;
+      width: 26px;
+      height: 25px; }
+      .header .header-right .notifications i {
+        background: #cb0e0e;
+        color: #fff;
+        font-size: 12px;
+        padding: 7px 8px;
+        border-radius: 27px;
+        width: 26px;
+        height: 25px; }
+      .header .header-right .notifications .count-label {
+        position: absolute;
+        top: -6px;
+        background: #333;
+        color: #fff;
+        border-radius: 15px;
+        font-size: 8px;
+        width: 17px;
+        height: 16px;
+        padding: 2px;
+        text-align: center;
+        right: -7px; }
+    .header .header-right .user-info {
+      float: right;
+      text-align: right;
+      margin-right: 10px; }
+      .header .header-right .user-info .name {
+        color: #cb0e0e;
+        font-size: 12px;
+        font-weight: bold; }
+      .header .header-right .user-info .role {
+        color: #8c8c8c;
+        font-size: 9px;
+        margin-top: -4px; }
