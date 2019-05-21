@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Html Starter Project</title>
-    <link rel="stylesheet" href="src/css/main.css">
-</head>
-<body>
-    <h1>HTML Starter Project</h1>
-    <p>
-        Include initial setup for html UI project with gulp setup for SASS and Typescript compilation. Bootstrap, Font-Awesome and Jquery added as starting libraries.
-    </p>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/css/main.css" />
+
+    <title>Lite Admin HTML</title>
+  </head>
+  <body>
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="header-left">
+          <img src="src/assets/logo.fw.png" />
+        </div>
+        <div class="header-right col">
+          <i class="fas fa-bars"></i>
+          <input type="text" placeholder="Search" class="search-input" />
+
+          <div class="notifications">
+            <i class="fas fa-bell"></i>
+            <span class="count-label">10</span>
+            <!-- <div class="notification-dropdown">
+              notifications
+            </div> -->
+          </div>
+          <div
+            class="pro-pic"
+            style="background-image:url(src/assets/pro-pic.jpeg)"
+          ></div>
+          <div class="user-info">
+            <div class="name">Jane Smith</div>
+            <div class="role">Electrical System Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
