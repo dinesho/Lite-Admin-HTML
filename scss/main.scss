@@ -1,29 +1,49 @@
 // Header Section
+//---------------------------------
 $primary-color: #cb0e0e;
 
 .header {
   box-shadow: 0 1px 2px #ccc;
 
+  // Header left section
   .header-left {
     background-color: $primary-color;
-    width: 160px;
+    width: 250px;
     text-align: center;
+    padding: 10px 0;
 
     img {
-      width: 70%;
+      width: 65%;
       margin: 10px 0;
+
+      // Breakpoint styles for screens smaller than 800px
+      @media (max-width: 800px) {
+        width: 162px;
+        margin-left: 26px;
+      }
+    }
+
+    // Breakpoint styles for screens smaller than 800px
+    @media (max-width: 800px) {
+      width: 100%;
+      text-align: left;
     }
   }
 
+  // Header right section
   .header-right {
-    padding: 12px;
-    margin: 0 10px;
+    padding: 20px 25px;
+
+    .menu-trigger {
+      font-size: 23px;
+      margin-top: 8px;
+    }
 
     .search-input {
       border: none;
       background: #e8e8e894;
       border-radius: 20px;
-      font-size: 12px;
+      font-size: 15px;
       padding: 4px 10px;
       margin-left: 10px;
 
@@ -33,8 +53,8 @@ $primary-color: #cb0e0e;
     }
 
     .pro-pic {
-      width: 25px;
-      height: 25px;
+      width: 40px;
+      height: 40px;
       background-position: center center;
       background-size: cover;
       border-radius: 50px;
@@ -46,30 +66,31 @@ $primary-color: #cb0e0e;
       position: relative;
       float: right;
       width: 26px;
-      height: 25px;
+      height: 40px;
+      margin-right: 10px;
 
       i {
-        background: #cb0e0e;
+        background: $primary-color;
         color: #fff;
-        font-size: 12px;
-        padding: 7px 8px;
+        font-size: 18px;
+        padding: 10px 12px;
         border-radius: 27px;
-        width: 26px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
       }
 
       .count-label {
         position: absolute;
         top: -6px;
-        background: #333;
+        background: #333333d1;
         color: #fff;
         border-radius: 15px;
-        font-size: 8px;
-        width: 17px;
-        height: 16px;
+        font-size: 11px;
+        width: 22px;
+        height: 21px;
         padding: 2px;
         text-align: center;
-        right: -7px;
+        right: -22px;
       }
     }
 
@@ -80,13 +101,13 @@ $primary-color: #cb0e0e;
 
       .name {
         color: $primary-color;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bold;
       }
 
       .role {
         color: #8c8c8c;
-        font-size: 9px;
+        font-size: 12px;
         margin-top: -4px;
       }
     }
