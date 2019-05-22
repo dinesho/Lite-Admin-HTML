@@ -1,9 +1,22 @@
+$primary-color: #cb0e0e;
+$page-background: #eeeeee;
+$menu-background: #444444;
+
+//Global Styles
+//---------------------------------
+.animate-all {
+  -webkit-transition: all 200ms ease-out 200ms;
+  -moz-transition: all 200ms ease-out 200ms;
+  -o-transition: all 200ms ease-out 200ms;
+  transition: all 200ms ease-out 200ms;
+}
+
 // Header Section
 //---------------------------------
-$primary-color: #cb0e0e;
-
 .header {
-  box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #2828284f;
+  z-index: 1000;
+  position: relative;
 
   // Header left section
   .header-left {
@@ -112,4 +125,72 @@ $primary-color: #cb0e0e;
       }
     }
   }
+}
+
+// Side Menu Section
+//---------------------------------
+.side-menu {
+  @extend .animate-all;
+  width: 250px;
+  min-height: 800px;
+  background: $menu-background;
+
+  .menu-item {
+    @extend .animate-all;
+    color: #ccc;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e8e8e817;
+    font-size: 14px;
+
+    &.animate-all i {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      border-left: 5px solid #ffffff78;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    &.current {
+      box-shadow: 0 5px 5px -5px #2323239c;
+      -moz-box-shadow: 0 5px 5px -5px #2323239c;
+      -webkit-box-shadow: 0 5px 5px -5px #2323239c;
+      border: none;
+      color: #fff;
+
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+100,7db9e8+100 */
+      background: #1e5799; /* Old browsers */
+      background: -moz-linear-gradient(
+        top,
+        #1e5799 0%,
+        #207cca 100%,
+        #7db9e8 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        #1e5799 0%,
+        #207cca 100%,
+        #7db9e8 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to bottom,
+        #4a4a4a 0%,
+        #4b4b4b 100%,
+        #7db9e8 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// Side Menu Section
+//---------------------------------
+.page-content {
+  background: $page-background;
+  min-height: 800px;
 }
