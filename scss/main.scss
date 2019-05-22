@@ -156,7 +156,7 @@ $menu-background: #444444;
       box-shadow: 0 5px 5px -5px #2323239c;
       -moz-box-shadow: 0 5px 5px -5px #2323239c;
       -webkit-box-shadow: 0 5px 5px -5px #2323239c;
-      border: none;
+      border-bottom: none;
       color: #fff;
 
       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+100,7db9e8+100 */
@@ -184,6 +184,17 @@ $menu-background: #444444;
       i {
         color: $primary-color;
       }
+    }
+  }
+
+  // Breakpoint styles for screens smaller than 800px
+  @media (max-width: 800px) {
+    position: absolute;
+    z-index: 10;
+    margin-left: -250px;
+
+    &.show {
+      margin-left: 0;
     }
   }
 }

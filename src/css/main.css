@@ -104,7 +104,7 @@
       box-shadow: 0 5px 5px -5px #2323239c;
       -moz-box-shadow: 0 5px 5px -5px #2323239c;
       -webkit-box-shadow: 0 5px 5px -5px #2323239c;
-      border: none;
+      border-bottom: none;
       color: #fff;
       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+100,7db9e8+100 */
       background: #1e5799;
@@ -119,6 +119,13 @@
       /* IE6-9 */ }
       .side-menu .menu-item.current i {
         color: #cb0e0e; }
+  @media (max-width: 800px) {
+    .side-menu {
+      position: absolute;
+      z-index: 10;
+      margin-left: -250px; }
+      .side-menu.show {
+        margin-left: 0; } }
 
 .page-content {
   background: #eeeeee;
