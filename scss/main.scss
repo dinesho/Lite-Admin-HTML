@@ -175,7 +175,7 @@ $menu-background: #444444;
       ); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(
         to bottom,
-        #4a4a4a 0%,
+        #444444 0%,
         #4b4b4b 100%,
         #7db9e8 100%
       ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -203,5 +203,54 @@ $menu-background: #444444;
 //---------------------------------
 .page-content {
   background: $page-background;
+  padding-top: 15px;
   min-height: 800px;
+
+  //Page Title Section
+  .page-title {
+    border-bottom: 1px solid #cccccc75;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+
+    h4 {
+      color: #444444;
+      margin-bottom: -1px;
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 12px;
+      color: #777;
+      padding-left: 32px;
+      text-transform: uppercase;
+    }
+  }
+
+  //Main stats widgets
+  .stats {
+    .widget {
+      background: #fff;
+      min-height: 100px;
+      border-radius: 4px;
+      box-shadow: 0 4px 4px -2px #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 15px 0;
+
+      h4 {
+        font-size: 25px;
+      }
+
+      i {
+        color: $primary-color;
+        font-size: 26px;
+      }
+
+      span {
+        font-size: 13px;
+        color: #6f6f6f;
+        font-weight: bold;
+      }
+    }
+  }
 }
