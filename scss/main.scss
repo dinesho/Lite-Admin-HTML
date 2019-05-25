@@ -95,6 +95,11 @@ $menu-background: #444444;
         border-radius: 27px;
         width: 40px;
         height: 40px;
+
+        &:hover {
+          cursor: pointer;
+          color: #333;
+        }
       }
 
       .count-label {
