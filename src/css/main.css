@@ -29,6 +29,9 @@
     .header .header-right .menu-trigger {
       font-size: 23px;
       margin-top: 8px; }
+      .header .header-right .menu-trigger:hover {
+        color: #cb0e0e;
+        cursor: pointer; }
     .header .header-right .search-input {
       border: none;
       background: #e8e8e894;

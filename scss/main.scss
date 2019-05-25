@@ -50,6 +50,11 @@ $menu-background: #444444;
     .menu-trigger {
       font-size: 23px;
       margin-top: 8px;
+
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
     }
 
     .search-input {
