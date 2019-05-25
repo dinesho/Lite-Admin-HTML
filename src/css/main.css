@@ -161,7 +161,7 @@
 .page-content {
   background: #eeeeee;
   padding-top: 15px;
-  min-height: 800px; }
+  min-height: 100hv; }
   .page-content .page-title {
     border-bottom: 1px solid #cccccc75;
     padding-bottom: 14px;
