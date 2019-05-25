@@ -173,6 +173,7 @@ $menu-background: #444444;
   width: 250px;
   min-height: 800px;
   background: $menu-background;
+  margin-left: -250px;
 
   .menu-item {
     @extend .animate-all;
@@ -226,15 +227,14 @@ $menu-background: #444444;
     }
   }
 
+  &.show {
+    margin-left: 0;
+  }
+
   // Breakpoint styles for screens smaller than 800px
   @media (max-width: 800px) {
     position: absolute;
     z-index: 10;
-    margin-left: -250px;
-
-    &.show {
-      margin-left: 0;
-    }
   }
 }
 
