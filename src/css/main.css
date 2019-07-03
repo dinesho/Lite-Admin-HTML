@@ -123,7 +123,7 @@
   width: 250px;
   min-height: 800px;
   background: #444444;
-  margin-left: -250px; }
+  margin-left: 0px; }
   .side-menu .menu-item {
     color: #ccc;
     padding: 15px 20px;
@@ -159,7 +159,8 @@
   @media (max-width: 800px) {
     .side-menu {
       position: absolute;
-      z-index: 10; } }
+      z-index: 10;
+      margin-left: -250px; } }
 
 .page-content {
   background: #eeeeee;
@@ -205,3 +206,20 @@
       font-size: 13px;
       color: #6f6f6f;
       font-weight: bold; }
+
+.login {
+  margin-top: 50px; }
+  .login h5 {
+    color: #cb0e0e;
+    padding-left: 15px;
+    padding-bottom: 15px; }
+  .login p {
+    font-size: 13px; }
+
+.form-group .validation {
+  font-size: 12px;
+  color: #ea7033;
+  padding: 8px 0 0 0;
+  display: none; }
+  .form-group .validation.show {
+    display: block; }
